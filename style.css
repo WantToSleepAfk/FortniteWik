@@ -1,0 +1,1016 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.1s ease;
+}
+.menu a:hover {
+    color: #4d4d4d;
+}
+
+.form-container {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    width: 250px;        
+    height: 250px; 
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: auto;
+    transition: 0.3s;
+}
+
+.form-container:hover{
+    scale: 1.1;
+}
+
+.hero {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    margin: 100px auto 40px auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.hero img {
+    max-width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero:hover{
+    scale: 1.1;
+}
+
+.epic-games {
+    background-color: rgb(161, 161, 161);
+    color: rgb(15, 15, 15);
+    margin: 100px auto 40px auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.epic-games img {
+    max-width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.epic-games-content{
+    flex: 1;
+}
+
+.epic-games:hover{
+    scale: 1.1;
+}
+
+.information {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    margin: 100px auto 40px auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.information img {
+    max-width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.information-content {
+    flex: 1;
+}
+
+.information:hover{
+    scale: 1.1;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 60vh;
+    border: none;
+    display: block;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    pointer-events: auto;
+}
+.map-container iframe:hover {
+    filter: grayscale(0%);
+}
+
+.bosses-section {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-title {
+    color: #ffd700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.boss-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(40, 40, 40, 0.9);
+    border: 2px solid #555;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.boss-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffd700;
+}
+
+.boss-img {
+    flex: 0 0 250px;
+    background: linear-gradient(135deg, #222, #444);
+}
+
+.boss-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.boss-info {
+    padding: 30px;
+    text-align: left;
+}
+
+.boss-info h3 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.boss-info p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.location {
+    display: inline-block;
+    background: #ffd700;
+    color: #000;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .boss-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .boss-info {
+        text-align: center;
+    }
+}
+
+.boss-img {
+    flex: 0 0 250px;
+    height: 300px;
+    background: linear-gradient(135deg, #222, #444);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.boss-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.boss-info {
+    flex: 1; 
+    padding: 30px;
+}
+
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 30px 20px;
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #2e2e2e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.4s;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide:hover {
+    filter: grayscale(0%);
+}
+
+/* Кнопки */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+    z-index: 2;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* Лайтбокс */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.footer .menu {
+    position: static;        
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    background: none;
+    align-items: center;
+}
+
+.footer .menu a {
+    font-size: 16px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.map-img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    cursor: zoom-in;
+    filter: grayscale(100%);
+}
+
+.map-img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+.slider {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.map-container h1{
+    color: rgb(0, 199, 213);
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.map-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: grab;
+}
+
+.map-img {
+    width: 100%;
+    display: block;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.menu-left a {
+    margin-right: 20px;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: orange;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background: #111;
+    color: white;
+    width: 400px;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.login-btn {
+    position: absolute;
+    right: 40px;   /* регулируй под свой отступ */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu {
+    padding-right: 0px;
+}
+.slider {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* затемнение */
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* текст */
+.slide-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+
+/* hover эффект */
+.slide:hover::after {
+    opacity: 1;
+}
+
+.slide:hover .slide-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* кнопки */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* затемнение всей картинки */
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.4) 40%,
+        rgba(0,0,0,0) 100%
+    );
+    opacity: 1; /* всегда видно */
+}
+
+/* текст */
+.slide-info {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+
+    color: #fff;
+    z-index: 2;
+
+    padding: 15px 20px;
+    border-radius: 12px;
+
+    background: rgba(0,0,0,0.55); /* фон под текст */
+    backdrop-filter: blur(6px);     /* стеклянный эффект */
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* заголовок */
+.slide-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+/* описание */
+.slide-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #eaeaea;
+}
+.slide-info h3 {
+    color: gold;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+
+.contact-section {
+    width: 90%;
+    max-width: 700px;
+    margin: 80px auto;
+    text-align: center;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background: rgba(30,30,30,0.9);
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: gold;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: orange;
+}
+
+.form-status {
+    font-size: 14px;
+    color: lightgreen;
+}
+
+.rank-container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 80px auto;
+    color: white;
+    text-align: center;
+}
+
+.rank-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(20,20,20,0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.rank-table th,
+.rank-table td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.rank-table th {
+    background: #111;
+    color: gold;
+}
+
+/* hover эффект */
+.rank-table tr:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+/* 🎮 бейджи */
+.badge {
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 13px;
+    display: inline-block;
+}
+
+/* цвета рангов */
+.bronze {
+    background: #cd7f32;
+    color: #000;
+}
+
+.silver {
+    background: #c0c0c0;
+    color: #000;
+}
+
+.gold {
+    background: #ffd700;
+    color: #000;
+}
+
+.platinum {
+    background: #00d1ff;
+    color: #000;
+}
+
+.diamond {
+    background: #00ffa6;
+    color: #000;
+}
+
+.elite {
+    background: #b300ff;
+    color: #fff;
+}
+
+.champion {
+    background: #ff3b3b;
+    color: #fff;
+}
+
+.unreal {
+    background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+
+.slider {
+    position: relative;
+    width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* фиксируем размер слайда */
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* 📌 ВАЖНО: одинаковый размер картинок */
+.slide img {
+    width: 100%;
+    height: 500px;        /* фикс высоты */
+    object-fit: cover;    /* обрезка без искажений */
+    display: block;
+    border-radius: 15px;
+}
+
+/* затемнение */
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+/* текст */
+.slide-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.slide-info h3 {
+    margin: 0 0 5px;
+    color: gold;
+}
+
+.slide-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* кнопки */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.slide {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    transform: scale(1.08);
+
+    transition: opacity 0.8s ease, transform 0.8s ease;
+
+    pointer-events: none;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+
+/* 📱 МОБИЛЬНАЯ АДАПТАЦИЯ */
+@media (max-width: 768px) {
+
+    /* меню */
+    .menu {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .menu-left {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-left a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .login-btn {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    /* hero и блоки */
+    .hero,
+    .epic-games,
+    .information {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero img,
+    .epic-games img,
+    .information img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* таблица рангов */
+    .rank-table th,
+    .rank-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* боссы */
+    .boss-card {
+        flex-direction: column;
+    }
+
+    /* слайдер */
+    .slider {
+        width: 100%;
+        height: 250px;
+    }
+
+    .slide img {
+        height: 250px;
+    }
+
+    /* карта */
+    .map-container h1 {
+        font-size: 18px;
+    }
+
+    /* форма */
+    .contact-form {
+        padding: 15px;
+    }
+
+    /* модалка */
+    .modal-content {
+        width: 90%;
+    }
+}

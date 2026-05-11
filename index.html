@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+  <source src="fortm.mp4" type="video/mp4">
+  <source src="fortm.mp4" type="video/webm">
+  Ваш браузер не поддерживает видео.
+    </video>
+    <div class="menu">
+    <div class="menu-left">
+        <a href="#s1"><span>Hero</span></a>
+        <a href="#s2"><span>About epic games</span></a>
+        <a href="#s3"><span>Information</span></a>
+        <a href="#s5"><span>Bosses</span></a>
+        <a href="#s6"><span>Map</span></a>
+    </div>
+
+    <button class="login-btn" id="openModal">Регистрация</button>
+</div>
+    <div class="hero">
+        <div class="pers"><img src="midas.png" id="s1"></div>
+        <div class="hero-content">
+        <h1>Мидас</h1>
+        <p>Его дизайн вдохновлен древнегреческим мифом о царе Мидасе, который превращал в золото всё, к чему прикасался.
+            Главная способность Мидаса — его уникальная пассивная способность.
+            Любое оружие или предмет, который Мидас берет в руки, мгновенно становится золотым. Если он бросает это оружие, оно остается золотым для других игроков до конца игры.
+            Мидас — лидер организации ПРИЗРАК.
+        </p>    
+        </div>
+    </div>
+    <div class="epic-games" id="s2">
+        <div class="epic"><img src="epic-games.png"></div>
+        <div class="epic-games-content">
+        <h1>Epic Games</h1>
+        <p>Epic Games — это ведущая американская компания, основанная в 1991 году Тимом Суини, которая прошла путь от небольшой студии до глобального технологического гиганта. Компания перевернула мир развлечений благодаря феноменальному успеху Fortnite и разработке Unreal Engine — самого продвинутого движка для создания 3D-контента, используемого в играх, кино и архитектуре. Сегодня Epic Games активно развивает собственную экосистему и магазин Epic Games Store, задавая новые стандарты открытости и справедливости для разработчиков и игроков по всему миру.</p>
+        </div>
+    </div>
+    <div class="information" id="s3">
+        <div class="fortnite"><img src="fortnite.png"></div>
+        <div class="fortnite-content">
+        <h1>Fortnite</h1>
+        <p>Fortnite — это захватывающая «Королевская битва» и масштабная креативная платформа, где уникальная механика строительства встречается с постоянно меняющимся миром и яркими культурными коллаборациями. Игроки могут не только сражаться за звание последнего выжившего, но и создавать собственные миры или посещать виртуальные концерты, превращая каждый матч в уникальное социальное событие. Это глобальный феномен, который объединяет миллионы людей, предлагая бесконечные возможности для драйва, творчества и самовыражения в эпицентре событий.</p>    
+        </div>
+    </div>
+        <div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+
+        <h1>Регистрация</h1>
+
+        <form id="myForm">
+            <label>Имя пользователя</label>
+            <input type="text" placeholder="Введите имя"><br><br>
+
+            <label>Почта</label>
+            <input type="email" placeholder="Введите почту"><br><br>
+
+            <label>Пароль</label>
+            <input type="password" placeholder="Введите пароль"><br><br>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+    
+
+
+
+<div class="rank-container" id="ranks">
+
+    <h2>Система рейтинга Fortnite</h2>
+
+    <table class="rank-table">
+
+        <tr>
+            <th>Ранг</th>
+            <th>Название</th>
+            <th>Описание</th>
+        </tr>
+
+        <tr>
+            <td><span class="badge bronze">Bronze</span></td>
+            <td>Бронза</td>
+            <td>Начальный уровень. Игрок только осваивает базовые механики игры.</td>
+        </tr>
+
+        <tr>
+            <td><span class="badge silver">Silver</span></td>
+            <td>Серебро</td>
+            <td>Игрок понимает основы игры, но часто допускает ошибки в боях.</td>
+        </tr>
+
+        <tr>
+            <td><span class="badge gold">Gold</span></td>
+            <td>Золото</td>
+            <td>Уверенный игрок, умеет строить и контролировать бой.</td>
+        </tr>
+
+        <tr>
+            <td><span class="badge platinum">Platinum</span></td>
+            <td>Платина</td>
+            <td>Сильный игрок с хорошей реакцией и тактическим мышлением.</td>
+        </tr>
+
+        <tr>
+            <td><span class="badge diamond">Diamond</span></td>
+            <td>Алмаз</td>
+            <td>Высокий уровень игры, почти профессиональная стабильность.</td>
+        </tr>
+
+        <tr>
+            <td><span class="badge elite">Elite</span></td>
+            <td>Элита</td>
+            <td>Топовые игроки с отличной механикой и контролем карты.</td>
+        </tr>
+
+        <tr>
+            <td><span class="badge champion">Champion</span></td>
+            <td>Чемпион</td>
+            <td>Соревновательные игроки, участвующие в турнирах.</td>
+        </tr>
+
+        <tr>
+            <td><span class="badge unreal">Unreal</span></td>
+            <td>Нереальный</td>
+            <td>Максимальный ранг. Лучшие игроки Fortnite в мире.</td>
+        </tr>
+
+    </table>
+
+</div>
+
+
+
+
+
+
+    <div class="bosses-section" id="s5">
+    <h2 class="section-title">Легендарные Боссы</h2>
+
+    <div class="boss-card">
+        <div class="boss-img">
+            <img src="Midasboss.png" alt="Midas">
+        </div>
+        <div class="boss-info">
+            <h3>Мидас (Midas)</h3>
+            <p>Золотой гений и лидер организации «Призрак». Его прикосновение превращает всё в золото, а его влияние ощущается в игре спустя многие сезоны.</p>
+            <span class="location">Локация: Агентство</span>
+        </div>
+    </div>
+
+    <div class="boss-card">
+        <div class="boss-img">
+            <img src="osnovatel.png" alt="The Foundation">
+        </div>
+        <div class="boss-info">
+            <h3>Основатель (The Foundation)</h3>
+            <p>Лидер «Семерых», озвученный Дуэйном «Скалой» Джонсоном. Он защищает Реальность и обладает невероятной физической мощью.</p>
+            <span class="location">Локация: Убежище</span>
+        </div>
+    </div>
+
+    <div class="boss-card" id="s6">
+        <div class="boss-img">
+            <img src="doctorslone.png" alt="Doctor Slone">
+        </div>
+        <div class="boss-info">
+            <h3>Доктор Слоун (Doctor Slone)</h3>
+            <p>Высокопоставленный офицер Ордена Петли. Она использует высокотехнологичное оружие и умеет создавать своих клонов во время боя.</p>
+            <span class="location">Локация: Корнишон / Комплекс</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="slider">
+    <button class="nav prev">‹</button>
+
+    <div class="slides">
+
+        <div class="slide active">
+            <img src="1.png">
+            <div class="slide-info">
+                <h3>Тяжелая снайперская винтовка</h3>
+                <p>оружие в игре Fortnite: Королевская битва, которое было представлено в 5 сезоне. Это мощное и точное оружие с болтовым механизмом и чрезвычайно медленной перезарядкой. </p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="2.png">
+            <div class="slide-info">
+                <h3>Тактический дробовик</h3>
+                <p>оружие в игре Fortnite, предназначенное для ближнего боя. Оно отличается высокой скорострельностью и подходит для поражения нескольких целей на близком расстоянии. 
+</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="3.png">
+            <div class="slide-info">
+                <h3>Залповый пистолет-пулемёт</h3>
+                <p>ружие в игре Fortnite, которое было добавлено в обновлении 9.10 29 мая 2019 года. Оно пришло на замену пистолету-пулемёту с глушителем, который был изъят из игры.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="4.png">
+            <div class="slide-info">
+                <h3>Самозарядная винтовка</h3>
+                <p>оружие было возвращено в игру из хранилища. Его можно найти на земле, в сундуках и грузах с припасами. В некоторых заданиях «Шифр» потребуется использовать самозарядную винтовку.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="5.png">
+            <div class="slide-info">
+                <h3>Дробовик "гром"</h3>
+                <p>помповый дробовик в игре Fortnite, который был добавлен в 4 главе и 1 сезоне. Он отличается высоким уроном и уникальной механикой стрельбы.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="nav next">›</button>
+</div>
+
+<div class="map-container">
+    <h1>Карта фортнайт 3 Глава 1 Сезон</h1> 
+    <div class="map-wrapper">
+        <img src="karta.jpg" class="map-img">
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+
+
+<div class="contact-section" id="contact">
+
+    <h2>Обратная связь</h2>
+
+    <form id="contactForm" class="contact-form">
+
+        <input type="text" id="name" placeholder="Ваше имя" required>
+
+        <input type="email" id="email" placeholder="Ваш Email" required>
+
+        <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+
+        <button type="submit">Отправить</button>
+
+        <p class="form-status" id="formStatus"></p>
+
+    </form>
+
+</div>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // отменяем стандартную отправку формы
+
+        // Здесь можешь добавить логику для отправки данных, если нужно (например, с помощью fetch)
+
+        // Редирект на страницу feedback.html
+        window.location.href = "feedback.html";
+    });
+</script>
+
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <menu class="menu">
+    <a href="#s1"><span>Hero</span></a>
+    <a href="#s2"><span>About epic games</span></a>
+    <a href="#s3"><span>Information</span></a>
+    <a href="#s5"><span>Bosses</span></a>
+    <a href="#s6"><span>Map</span></a>
+</menu>
+    </div>
+</footer>
+
+
+</body>
+</html>
